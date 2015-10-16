@@ -10,8 +10,14 @@ body {
 
 /* Blog header div */
 .blog-header {
+	color: black;
 }
 
-.blog-title {
-	
+.blog-header a,a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.blog-logo {
+	color: darkred;
 }

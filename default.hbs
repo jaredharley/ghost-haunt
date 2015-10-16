@@ -21,8 +21,8 @@
 <body class="{{body_class}}">
 	<div class="container">
 		<div class="blog-header">
-			<h1 class="blog-title"><a href="{{blog_url}}"><i class="fa fa-battery-1"></i> Running low</a></h1>
-			<p class="lead blog-description">Jared Harley</p>
+			<h1 class="blog-title"><a href="{{@blog.url}}"><i class="fa fa-battery-1 blog-logo"></i> {{@blog.title}}</a></h1>
+			<p class="lead blog-description">{{@blog.description}}</p>
 		</div>
 		<div class="row">
 			<div class="col-sm-8 blog-main">
@@ -31,9 +31,7 @@
 			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 				<div class="sidebar-module sidebar-module-inset">
 					<h4>About me</h4>
-					<figure class="author-image">
-						<a class="img" href="/author/jared/" style="background-image: url('/assets/images/jared.jpg')"><span class="hidden">Jared's Picture</span></a>
-					</figure>
+					<a href="/author/jared"><img src="{{@blog.logo}}" /></a>
 				</div>
 				<div class="sidebar-module">
 					<h4>Elsewhere</h4>
