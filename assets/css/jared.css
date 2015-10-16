@@ -1,0 +1,17 @@
+/* Makes all img tags responsive */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+}
+
+/* Blog header div */
+.blog-header {
+}
+
+.blog-title {
+	
+}

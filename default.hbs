@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="description" content="{{meta_description}}" />
+	<meta name="author" content="{{meta_author}}">
+
+	<title>{{meta_title}}</title>
+	<link rel="shortcut icon" href="/assets/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/jared.css">
+		
+	{{! Ghost outputs important style and meta data with this tag }}
+	{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+	<div class="container">
+		<div class="blog-header">
+			<h1 class="blog-title"><a href="{{blog_url}}"><i class="fa fa-battery-1"></i> Running low</a></h1>
+			<p class="lead blog-description">Jared Harley</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 blog-main">
+				{{{body}}}
+			</div><!-- /.blog-main -->
+			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About me</h4>
+					<figure class="author-image">
+						<a class="img" href="/author/jared/" style="background-image: url(/assets/jared.jpg)"><span class="hidden">Jared's Picture</span></a>
+					</figure>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Github</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+	<footer class="blog-footer">
+		<p>footer info here</p>
+	</footer>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+</body>
+</html>

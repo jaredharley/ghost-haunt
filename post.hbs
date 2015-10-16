@@ -1,0 +1,33 @@
+{{!< default}}
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<div class="row">
+	<div class="col-md-12 {{post_class}}">
+		<h2>{{title}}</h2>
+		<p>{{content}}</p>
+	</div><!-- /.col -->
+</div><!-- /.row -->
+<div class="row">
+	<div class="col-md-12">
+		<nav>
+			<ul class="pager">
+				<li class="previous">
+					{{#prev_post}}
+					<a href="{{url}}"><span aria-hidden="true">&larr;</span> {{title}}</a>
+					{{/prev_post}}
+				</li>
+				<li class="next">
+					{{#next_post}}
+					<a href="{{url}}">{{title}} <span aria-hidden="true">&rarr;</span></a>
+					{{/next_post}}
+				</li>
+			</ul>
+		</nav>
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+{{/post}}
