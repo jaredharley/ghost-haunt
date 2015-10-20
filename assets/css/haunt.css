@@ -11,13 +11,75 @@ body {
 /* Blog header div */
 .blog-header {
 	color: black;
+	background-color: #C9C9C9;
+	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1) inset;
 }
 
-.blog-header a,a:hover {
+.blog-header a, .blog-header a:hover {
 	color: black;
 	text-decoration: none;
 }
 
 .blog-logo {
 	color: darkred;
+}
+
+.blog-footer {
+	margin-top: 5em;
+	padding: 20px 0px 10px 0px;
+	color: #999;
+	text-align: center;
+	background-color: #F9F9F9;
+	border-top: 1px solid #E5E5E5;
+}
+
+.sidebar-module {
+	background-color: #c3ffc3;
+}
+
+/* Bootstrap overrides */
+code {
+	border-radius: 0;
+	font-family: "Source Code Pro",Monaco,Consolas,"Courier New",Courier,monospace;
+}
+
+a>code {
+	font-weight: bold;
+}
+
+a:hover>code{
+	text-decoration: underline;
+}
+
+pre {
+	border-radius: 0;
+	background-color: #1D1F21;
+	color: #C5C8C6;
+	border: 0;
+}
+
+/* Prism overrides */
+pre[class*="language-"] {
+	border-radius: 0;
+
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family: "Source Code Pro",Monaco,Consolas,"Courier New",Courier,monospace;
+	border: 0;
+	text-shadow: none;
+}
+
+::-moz-selection
+{
+    text-shadow: none;
+    background-color: rgba(177, 214, 255, 0.8);
+    color: #333333;
+}
+
+::selection {
+    text-shadow: none;
+    background-color: rgba(177, 214, 255, 0.8);
+    color: #333333;
 }

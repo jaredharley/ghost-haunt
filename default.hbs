@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="/assets/images/favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/prism-atom-dark.css">
 	<link rel="stylesheet" href="/assets/css/haunt.css">
 		
 	{{! Ghost outputs important style and meta data with this tag }}
@@ -19,11 +20,13 @@
 </head>
 
 <body class="{{body_class}}">
-	<div class="container">
-		<div class="blog-header">
+	<div class="blog-header">
+		<div class="container">
 			<h1 class="blog-title"><a href="{{@blog.url}}"><i class="fa fa-battery-1 blog-logo"></i> {{@blog.title}}</a></h1>
 			<p class="lead blog-description">{{@blog.description}}</p>
-		</div>
+		</div><!-- /.container -->
+	</div><!-- /.blog-header -->
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 blog-main">
 				{{{body}}}
@@ -40,15 +43,28 @@
 						<li><a href="#">Github</a></li>
 					</ol>
 				</div>
+				{{#post}}
+				<div class="sidebar-module">
+					{{#prev_post}}
+					<p>Previously: 
+					<a href="{{url}}">{{title}}</a>
+					</p>
+					{{/prev_post}}
+					{{#next_post}}
+					<p>Up next:
+					<a href="{{url}}">{{title}}</a>
+					</p>
+					{{/next_post}}
+				</div>
+				{{/post}}
 			</div><!-- /.blog-sidebar -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->
-	<footer class="blog-footer">
-		<p>footer info here</p>
-	</footer>
+	{{! The tag below includes the post loop - partials/loop.hbs }}
+	{{> "footer"}}
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
-
+<script src="/assets/js/prism.js"></script>
 </body>
 </html>
