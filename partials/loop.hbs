@@ -2,9 +2,21 @@
 {{#foreach posts}}
 <div class="row">
 	<div class="col-lg-12">
-		<h2><a href="{{url}}">{{{title}}}</a></h2>
-		<p class="subhead"><a href="{{url}}"><i class="fa fa-bookmark"></i></a> {{date format="DD MMMM YYYY"}}</p>
-		<p>{{content}}</p>
+		<div class="blog-post">
+			<h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+			<p class="post-subhead">
+				<a href="{{url}}" title="Last updated: {{updated_at}}"><i class="fa fa-clock-o"> </i> {{date format="DD MMMM YYYY"}}</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;
+				<a href="https://getpocket.com/save?url={{url absolute="true"}}&title={{{title}}}" title="Add this post to your Pocket list"><i class="fa fa-get-pocket"></i>&nbsp;&nbsp;Add to Pocket</a>
+			{{#if tags}}
+			&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;	
+				<i class="fa fa-tags"></i>
+			{{#foreach tags}}&nbsp;
+				<a href="{{url}}" title="See more posts tagged {{name}}" class="tag-{{id}}">{{name}}</a>
+			{{/foreach}}{{/if}}
+			</p>
+			<div class="post-content">{{content}}</div>
+		</div><!-- /.blog-post -->
 	</div><!-- /.col-sm-8 -->
 </div><!-- /.row -->
 {{/foreach}}
