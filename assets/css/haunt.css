@@ -12,8 +12,11 @@ body {
 /* Blog header div */
 .blog-header {
 	color: black;
-	background-color: #C9C9C9;
+	/*background-color: #C9C9C9;*/
+	/*background-color: #69a3af;*/
+	background-color: rgba(105, 163, 175, 0.5);
 	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1) inset;
+	/*text-shadow: 0px 1px 1px rgba(130, 130, 130, 1);*/
 }
 
 a {
@@ -82,7 +85,7 @@ a:hover {
 }
 
 .blog-post {
-	border-bottom: 1px solid #EEEEEE;
+	border-bottom: 1px solid #dddddd;
 	margin-bottom: 2.2em;
 	padding-bottom: 2em;
 }

@@ -1,0 +1,16 @@
+{{! Overrides the default pagination of Ghost }}
+<nav>
+	<ul class="pager">
+    {{#if prev}}
+    	<li class="previous">
+    		<a class="newer-posts" href="{{page_url prev}}"><span aria-hidden="true">&larr;</span> Newer Posts</a>
+    	</li>
+    {{/if}}
+    {{#if next}}
+    	<li class="next">
+    		<a class="older-posts" href="{{page_url next}}">Older Posts <span aria-hidden="true">&rarr;</span></a>
+    	</li>
+    {{/if}}
+    </ul>
+</nav>
+<span class="page-number">Page {{page}} of {{pages}} {{total}}</span>
