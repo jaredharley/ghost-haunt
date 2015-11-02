@@ -50,6 +50,7 @@ a:hover {
 
 .post-content hr {
 	width: 80%;
+	border-color: #eee;
 }
 
 .post-title {
@@ -84,10 +85,10 @@ a:hover {
 	border-top: 1px solid #E5E5E5;
 }
 
-.blog-post {
-	border-bottom: 1px solid #dddddd;
-	margin-bottom: 2.2em;
-	padding-bottom: 2em;
+/* Divider between blog posts */
+.divider {
+	border-color: rgba(105, 163, 175, 0.3);
+	margin: 3em 0 2em 0;
 }
 
 .sidebar-module {
