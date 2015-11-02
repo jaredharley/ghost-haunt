@@ -29,18 +29,17 @@ a:hover {
 }
 
 .post-content {
-	padding-top: 1em;
+	/*padding-top: 1em;*/
 	font-size: 16px;
 	line-height: 1.5em;
 }
 
-.post-content a {
+.post-content a, .sidebar-module-content a {
 	color: #2097b2;
 }
 
-.post-content a:hover {
+.post-content a:hover, .sidebar-module-content a:hover {
 	text-decoration: none;
-	/*color: #3097b2;*/
 	color: #b23a20;
 }
 
@@ -92,7 +91,46 @@ a:hover {
 }
 
 .sidebar-module {
-	background-color: #c3ffc3;
+	padding-bottom: 1.5em;
+}
+
+.sidebar-module-content {
+	margin: 10px;
+}
+
+/* Thanks to http://howtocenterincss.com/ */
+.blocklink {
+	display: flex ;
+	justify-content:center;
+	align-items:center;
+	width: 25%;
+	float: left;
+}
+
+.blocklink svg {
+	float: none;
+	height: 2rem;
+	margin: 0.8rem;
+}
+
+.blocklink-rss {
+	background-color: #FFA500;
+}
+
+.blocklink-twitter {
+	background-color: #55acee;
+}
+
+.blocklink-github {
+	background-color: #181717;
+}
+
+.blocklink-email {
+	background-color: #808080;
+}
+
+.blocklink-facebook {
+	background-color: #3b5998;
 }
 
 /* Bootstrap overrides */
