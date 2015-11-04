@@ -105,6 +105,14 @@ a:hover {
 	align-items:center;
 	width: 25%;
 	float: left;
+	-webkit-transition: all 50ms linear 50ms;
+	   -moz-transition: all 50ms linear 50ms;
+		 -o-transition: all 50ms linear 50ms;
+			transition: all 50ms linear 50ms;
+}
+
+.blocklink:hover {
+	background-color: #b23a20;
 }
 
 .blocklink svg {
@@ -125,12 +133,8 @@ a:hover {
 	background-color: #181717;
 }
 
-.blocklink-email {
-	background-color: #808080;
-}
-
-.blocklink-facebook {
-	background-color: #3b5998;
+.blocklink-linkedin {
+	background-color: #0077B5;
 }
 
 /* Bootstrap overrides */
