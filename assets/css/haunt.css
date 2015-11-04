@@ -137,6 +137,20 @@ a:hover {
 	background-color: #0077B5;
 }
 
+.footer-link {
+	display: flex ;
+	justify-content: left;
+	align-items:center;
+	float: left;
+	font-size: 90%;
+}
+
+.footer-link svg {
+	height: 2em;
+	width: 2em;
+	float: none;
+}
+
 /* Bootstrap overrides */
 code {
 	border-radius: 0;
