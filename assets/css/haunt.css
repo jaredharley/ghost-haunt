@@ -139,16 +139,35 @@ a:hover {
 
 .footer-link {
 	display: flex ;
-	justify-content: left;
 	align-items:center;
+	font-size: 80%;
+}
+
+.footer-link-left {
 	float: left;
-	font-size: 90%;
+	justify-content: left;
+	height: 2em;
+}
+
+.footer-link-center {
+	justify-content: center;
+	height: 2em;
+}
+
+.footer-link-right {
+	text-align: right;
+	justify-content: flex-end;
+	height: 2em;
 }
 
 .footer-link svg {
 	height: 2em;
 	width: 2em;
 	float: none;
+}
+
+.footer-link a {
+	color: #bbbbbb;
 }
 
 /* Bootstrap overrides */
