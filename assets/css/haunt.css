@@ -56,12 +56,14 @@ a:hover {
 	margin-bottom: .2em;
 }
 
-.post-subhead a {
+.post-subhead a, .post-subhead-icon path{
 	color: #bbb;
+	fill: #bbb;
 }
 
-.post-subhead a:hover {
+.post-subhead a:hover, .post-subhead-icon path:hover{
 	color: #b23a20;
+	fill: #b23a20;
 }
 
 .post-subhead {
@@ -69,6 +71,19 @@ a:hover {
 	border-bottom: 1px dotted #eeeeee;
 	border-top: 1px dotted #eeeeee;
 	padding: 10px 0 10px 0;
+}
+
+.post-subhead-icon {
+	height: 1em;
+}
+
+/*.post-subhead-icon path {
+	fill: #bbb;
+}*/
+
+.blog-title a svg {
+	height: 1em;
+	width: 75px;
 }
 
 .blog-logo {
