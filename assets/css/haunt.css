@@ -61,11 +61,6 @@ a:hover {
 	fill: #bbb;
 }
 
-.post-subhead a:hover, .post-subhead-icon path:hover{
-	color: #b23a20;
-	fill: #b23a20;
-}
-
 .post-subhead {
 	color: #bbbbbb;
 	border-bottom: 1px dotted #eeeeee;
@@ -73,13 +68,23 @@ a:hover {
 	padding: 10px 0 10px 0;
 }
 
-.post-subhead-icon {
-	height: 1em;
+.post-subhead a:hover{
+	color: #b23a20;
+	fill: #b23a20;
 }
 
-/*.post-subhead-icon path {
-	fill: #bbb;
-}*/
+/* Fill with Pocket pink on hover */
+.post-subhead a:hover svg.svg-hover-blue path{
+	fill: #204eb2;
+}
+
+.post-subhead a:hover svg.svg-hover-pink path{
+	fill: #EF3F56;
+}
+
+.post-subhead-icon {
+	height: 0.8em;
+}
 
 .blog-title a svg {
 	height: 0.8em;
